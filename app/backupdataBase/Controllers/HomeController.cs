@@ -219,11 +219,9 @@ namespace backupdataBase.Controllers
         }
 
         private FileInfo GetFileInfo(string path)
-        {
-            var info = new FileInfo(path);
-            Console.WriteLine($" --------------sie :{info.Length / (1024.0 * 1024.0)} Mb ------------- ");
-            return info;
-        }
+        =>new FileInfo(path);
+
+        
 
     }
 }
